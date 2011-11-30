@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+		<title>fadeQueue: jQuery plugin demo by Palle Zingmark</title> 
+		<link type="text/css" rel="stylesheet" href="style.css"> 
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script> 
+		<script type="text/javascript" src="http://jquery.palleman.nu/fadequeue/jquery.fadequeue.min.js"></script> 
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]--> 
+		<script type="text/javascript">
+		$(document).ready(function(){
+			//# Since this plugin fades stuff in, lets hide 
+			//# everything when document is ready.
+			$('#content p').hide();
+
+
+
+			//# DEMO 1
+			$('#demo1').bind('click', function(){
+				$('#content').fadeQueue();
+			});
+
+			//# DEMO 2
+			$('#demo2').bind('click', function(){
+				$('#content').fadeQueue({
+					duration: 500,
+					pause: 40
+				});
+			});
+			
+			//# DEMO 3
+			$('#demo3').bind('click', function(){
+				$('#content').fadeQueue(50, function(){
+					$('#content').prepend('<div class="bazinga"><h2>Bazinga!</h2> This markup was prepended into the dom when queue is empty.<br> - Click to remove.</div>').bind('click', function(){
+						$('div.bazinga').remove();
+					});
+				});
+			});
+
+			//# DEMO 4
+			$('#demo4').bind('click', function(){
+				$('#content p').show();
+				$('#content').fadeQueue({
+					startAt: $('#content :nth-child(5)')
+				});
+			});
+
+
+			//# Demo specific djunk, dont mind this:
+			$('button.back').bind('click', function(){
+				location.href='../';
+			});
+		});
+		</script>
+	</head> 
+	<body> 
+		<header>
+			<h1>Demo: fadeQueue</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><button id="demo1">Demo 1</button></li>
+				<li><button id="demo2">Demo 2</button></li>
+				<li><button id="demo3">Demo 3</button></li>
+				<li><button id="demo4">Demo 4</button></li>
+			</ul>
+		<nav>
+		<section id="content"> 
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> 
+			<p>Aenean commodo ligula eget dolor. Aenean massa.</p> 
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> 
+			<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p> 
+			<p>Nulla consequat massa quis enim.</p> 
+			<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> 
+			<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+			<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p> 
+			<p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p> 
+			<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p> 
+			<p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p> 
+			<p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p> 
+			<p>Aenean imperdiet. Etiam ultricies nisi vel augue.</p> 
+			<p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p> 
+			<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing.</p> 
+			<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p> 
+			<p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p> 
+			<p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p> 
+			<p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p> 
+			<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+		</section> 
+	</body> 
+</html>
