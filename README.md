@@ -3,13 +3,13 @@ Dual licensed under the MIT and GPL licenses.
 
 #AUTHOR
 Palle Zingmark 
-*[info@palleman.nu](info@palleman.nu) 
-*[palleman.nu](palleman.nu) 
-*[twitter.com/palleman](twitter.com/palleman) 
+* [info@palleman.nu](info@palleman.nu) 
+* [palleman.nu](palleman.nu) 
+* [twitter.com/palleman](twitter.com/palleman) 
 
 #DEMOS
-*http://jquery.palleman.nu/fadequeue/
-*http://jsfiddle.net/pallezingmark/D46fS/
+* http://jquery.palleman.nu/fadequeue/
+* http://jsfiddle.net/pallezingmark/D46fS/
 
 #DESCRIPTION
 This plugin creates a queue containing all children inside the
