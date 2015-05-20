@@ -1,13 +1,12 @@
 #INFORMATION
-jQuery fadeQueue - v0.5 - 25/2/2011
-Copyright (c) 2011 [Palle Zingmark](palleman.nu)
+jQuery fadeQueue - v0.5 - 25/2/2011.
 Dual licensed under the MIT and GPL licenses.
 
 #AUTHOR
 Palle Zingmark
-<info@palleman.nu>
-<palleman.nu>
-<twitter.com/palleman>
+[info@palleman.nu](info@palleman.nu)
+[palleman.nu](palleman.nu)
+[twitter.com/palleman](twitter.com/palleman)
 
 #DEMOS
 http://jquery.palleman.nu/fadequeue/
