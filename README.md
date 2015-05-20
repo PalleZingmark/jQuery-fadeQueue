@@ -1,16 +1,15 @@
-#INFORMATION
-jQuery fadeQueue - v0.5 - 25/2/2011. 
+#jQuery fadeQueue, v0.5
 Dual licensed under the MIT and GPL licenses.
 
 #AUTHOR
 Palle Zingmark 
-[info@palleman.nu](info@palleman.nu) 
-[palleman.nu](palleman.nu) 
-[twitter.com/palleman](twitter.com/palleman) 
+*[info@palleman.nu](info@palleman.nu) 
+*[palleman.nu](palleman.nu) 
+*[twitter.com/palleman](twitter.com/palleman) 
 
 #DEMOS
-http://jquery.palleman.nu/fadequeue/
-http://jsfiddle.net/pallezingmark/D46fS/
+*http://jquery.palleman.nu/fadequeue/
+*http://jsfiddle.net/pallezingmark/D46fS/
 
 #DESCRIPTION
 This plugin creates a queue containing all children inside the
@@ -19,6 +18,7 @@ and fades in the element, one after another. You can also
 choose to start the queue at any direct children inside the
 provided parent.
 
+```JavaScript
 @param {number|object|function} These parameters can be provided:
 
 @param {number} Provide the duration (miliseconds) for the queued item to fade in.
@@ -52,3 +52,4 @@ provided parent.
     $('#mydiv').fadeQueue(function(){
       alert('Queue is empty')
     });
+```
